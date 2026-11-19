@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Educational guide to safer UPI and digital payments.">
+  <title>Digital Payment Security Awareness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#home">🛡️ SafePay Awareness</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#learn">Learn</a><a href="#safety">Safety Tips</a>
+        <a href="#scams">Common Scams</a><a href="#quiz">Quiz</a><a href="#help">Get Help</a>
+      </div>
+    </nav>
+    <section id="home" class="hero-content">
+      <span class="eyebrow">STUDENT AWARENESS PROJECT</span>
+      <h1>Make every digital payment a safer payment.</h1>
+      <p>Learn simple habits to protect your UPI transactions, personal information and money.</p>
+      <a class="button button-light" href="#learn">Explore the modules ↓</a>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <div><span class="eyebrow">ABOUT THIS PROJECT</span><h2>Awareness is your first layer of protection.</h2></div>
+      <p>This educational website explains common digital-payment risks and safer practices. It is designed for awareness and learning. It does not connect to banks, process payments or collect financial credentials.</p>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-heading"><span class="eyebrow">MODULE 01</span><h2>Understand digital payments</h2><p>Know what happens when you pay digitally.</p></div>
+      <div class="grid three">
+        <article class="card"><div class="icon">📱</div><h3>UPI payments</h3><p>UPI lets users transfer money between bank accounts through supported apps. Always check the recipient details before approving a payment.</p></article>
+        <article class="card"><div class="icon">🏦</div><h3>Banking apps</h3><p>Use official banking applications and keep your phone, apps and operating system updated.</p></article>
+        <article class="card"><div class="icon">💳</div><h3>Cards & wallets</h3><p>Protect card details and wallet access. Enable transaction alerts where available and review account activity regularly.</p></article>
+      </div>
+    </section>
+
+    <section id="safety" class="section soft">
+      <div class="section-heading"><span class="eyebrow">MODULE 02</span><h2>Essential safety practices</h2><p>Make these checks part of every transaction.</p></div>
+      <div class="grid two">
+        <article class="tip"><span>01</span><div><h3>Verify the receiver</h3><p>Check the recipient's name and payment details shown in your payment app before confirming.</p></div></article>
+        <article class="tip"><span>02</span><div><h3>Never share secrets</h3><p>Never share your UPI PIN, OTP, password, CVV or full card details with anyone. Genuine support staff should not ask for your PIN or OTP.</p></div></article>
+        <article class="tip"><span>03</span><div><h3>Remember how PINs work</h3><p>Entering a UPI PIN generally authorises a debit from your account. You do not need to enter a PIN just to receive money.</p></div></article>
+        <article class="tip"><span>04</span><div><h3>Check the transaction status</h3><p>Confirm payment inside the app's transaction history or bank statement. Do not rely only on a screenshot or message.</p></div></article>
+        <article class="tip"><span>05</span><div><h3>Be careful with links</h3><p>Avoid unknown links, QR codes and screen-sharing requests. Open your payment app directly instead of following unexpected messages.</p></div></article>
+        <article class="tip"><span>06</span><div><h3>Secure your device</h3><p>Use a screen lock, install apps from trusted app stores, update software and avoid payments on public or shared devices.</p></div></article>
+      </div>
+    </section>
+
+    <section id="scams" class="section">
+      <div class="section-heading"><span class="eyebrow">MODULE 03</span><h2>Recognise common warning signs</h2><p>Pause when a request creates urgency or asks for confidential information.</p></div>
+      <div class="grid three">
+        <article class="card warning"><div class="icon">🎁</div><h3>Prize or reward message</h3><p>A message claims you won a prize and asks you to pay a fee or share an OTP. Treat unexpected rewards with suspicion.</p></article>
+        <article class="card warning"><div class="icon">📞</div><h3>Impersonation call</h3><p>A caller pretends to be bank or customer support and pressures you to reveal a PIN, OTP or password. End the call and contact the institution using its official channel.</p></article>
+        <article class="card warning"><div class="icon">🔗</div><h3>Fake payment link</h3><p>An unknown link asks you to sign in, install an app or approve a request. Do not proceed; verify independently.</p></article>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="section-heading"><span class="eyebrow">MODULE 04</span><h2>Before-you-pay checklist</h2><p>Use this quick checklist before approving a payment.</p></div>
+      <div class="checklist" id="checklist">
+        <label><input type="checkbox"> I checked the receiver's name and details.</label>
+        <label><input type="checkbox"> The amount is correct.</label>
+        <label><input type="checkbox"> I opened the official payment app myself.</label>
+        <label><input type="checkbox"> Nobody asked me to share an OTP or PIN.</label>
+        <label><input type="checkbox"> I understand what I am approving.</label>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p id="progressText" aria-live="polite">0 of 5 checks completed</p>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="section-heading"><span class="eyebrow">MODULE 05</span><h2>Test your awareness</h2><p>Choose the safest answer for each question.</p></div>
+      <div class="quiz card">
+        <div class="quiz-top"><span id="questionCount">Question 1 of 5</span><span id="scoreLabel">Score: 0</span></div>
+        <h3 id="question">You receive a call asking for your UPI PIN to verify your account. What should you do?</h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" aria-live="polite"></p>
+        <button id="nextButton" class="button" disabled>Next question</button>
+        <button id="restartButton" class="button button-outline" hidden>Try again</button>
+      </div>
+    </section>
+
+    <section id="help" class="section help-section">
+      <div class="help-box">
+        <span class="eyebrow">MODULE 06</span><h2>What to do if you suspect fraud</h2>
+        <ol>
+          <li>Contact your bank or payment service provider immediately using its official app, website or phone number.</li>
+          <li>For financial cyber fraud in India, call the national helpline <strong>1930</strong> as soon as possible.</li>
+          <li>Report the incident through the Government of India's <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Reporting Portal</a>.</li>
+          <li>Keep transaction references and relevant messages for the bank or authorities. Never post account details or OTPs publicly.</li>
+        </ol>
+        <p class="note">This website is an educational project, not an emergency service. Follow the latest instructions from official authorities and your bank.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Digital Payment Security Awareness | Student Educational Project</p><p>Stay alert. Verify before you pay.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
